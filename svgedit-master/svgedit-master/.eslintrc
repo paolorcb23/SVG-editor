@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "standard", "plugin:compat/recommended",
+    "plugin:qunit/recommended", "plugin:testcafe/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["compat", "qunit", "testcafe"],
+  "env": {
+    "node": false,
+    "browser": true
+  },
+  "settings": {
+    "polyfills": ["url", "promises", "fetch", "queryselector"]
+  },
+  "rules": {
+    "semi": [2, "always"],
+    "indent": ["error", 2, {"outerIIFEBody": 0}],
+    "no-tabs": 0,
+    "object-property-newline": 0,
+    "one-var": 0,
+    "no-var": 2,
+    "prefer-const": 2,
+    "no-extra-semi": 2,
+    "quote-props": [2, "as-needed"],
+    "object-curly-spacing": ["error", "never"],
+    "valid-jsdoc": ["off", {
+        "prefer": {
+            "arg": "param",
+            "argument": "param",
+            "return": "returns",
+            "virtual": "abstract"
+        },
+        "preferType": {
+            "Boolean": "boolean",
+            "Number": "number",
+            "String": "string",
+            "object": "Object",
+            "array": "Array"
+        },
+        "requireReturn": true,
+        "requireReturnType": true,
+        "requireParamType": true,
+        "matchDescription": "^([A-Z][\\s\\S]*[.`?!])?$",
+        "requireParamDescription": false,
+        "requireReturnDescription": false
+    }]
+  }
+}

@@ -1,0 +1,2 @@
+Para que todos funcionen correctamente
+debo editar cada ruta y hacerlas relativas.
